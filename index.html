@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Workshop Job Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Workshop Job Tracker</h1>
+<p>Track workshop jobs and delivery dates</p>
+
+</header>
+
+<main>
+
+<section class="form-section">
+
+<h2>Add New Job</h2>
+
+<form>
+
+<label for="client">Client</label>
+<input type="text" id="client" name="client" required>
+
+<label for="device">Device</label>
+<input type="text" id="device" name="device" required>
+
+<label for="type">Type</label>
+<select id="type">
+
+<option>Orthosis</option>
+<option>Prosthesis</option>
+<option>Repair</option>
+
+</select>
+
+<label for="date">Due Date</label>
+<input type="date" id="date">
+
+<button type="submit">Add Job</button>
+
+</form>
+
+</section>
+
+<section class="jobs-section">
+
+<h2>Jobs</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Client</th>
+<th>Device</th>
+<th>Type</th>
+<th>Status</th>
+<th>Due Date</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>001</td>
+<td>Juan</td>
+<td>Foot Orthosis</td>
+<td>Orthosis</td>
+<td>Pending</td>
+<td>2026-04-12</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
